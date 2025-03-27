@@ -4557,11 +4557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\asp.net core projects\\Restorant\\Restorant\\Restorant.csproj",
+      "projectUniqueName": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restorant.csproj",
       "projectName": "Restorant",
-      "projectPath": "E:\\asp.net core projects\\Restorant\\Restorant\\Restorant.csproj",
+      "projectPath": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restorant.csproj",
       "packagesPath": "C:\\Users\\Noureldeen\\.nuget\\packages\\",
-      "outputPath": "E:\\asp.net core projects\\Restorant\\Restorant\\obj\\",
+      "outputPath": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Noureldeen\\AppData\\Roaming\\NuGet\\NuGet.Config",
