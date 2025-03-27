@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\asp.net core projects\\Restorant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\ingredent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\ingredent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\productingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\productingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|e:\\asp.net core projects\\restorant\\restorant\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EA454A-E3D7-49B6-9EED-6B97B0B48A79}|Restorant\\Restorant.csproj|solutionrelative:restorant\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\appsettings.json",
+              "RelativeDocumentMoniker": "Restorant\\appsettings.json",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\appsettings.json",
+              "RelativeToolTip": "Restorant\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-23T12:23:50.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Restorant\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Restorant\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:03:57.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductIngredient.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ProductIngredient.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\ProductIngredient.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ProductIngredient.cs",
+              "RelativeToolTip": "Restorant\\Models\\ProductIngredient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:25:54.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\Product.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Product.cs",
+              "RelativeToolTip": "Restorant\\Models\\Product.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:18:22.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ingredent.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Ingredent.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\Ingredent.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Ingredent.cs",
+              "RelativeToolTip": "Restorant\\Models\\Ingredent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:28:12.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\Category.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Category.cs",
+              "RelativeToolTip": "Restorant\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:22:25.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\ApplicationUser.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Restorant\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:07:44.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\OrderItem.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Restorant\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:15:50.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\Order.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\Order.cs",
+              "RelativeToolTip": "Restorant\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:10:44.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Restorant\\Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\asp.net core projects\\Restorant\\Restorant\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Restorant\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:03:27.399Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
