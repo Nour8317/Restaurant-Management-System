@@ -16,7 +16,7 @@ namespace Restorant.Models
         public int CategoryId {get; set;}
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = "default.jpg";
         [ValidateNever]
         public List<OrderItem> OrderItems { get; set; }
         [ValidateNever]
