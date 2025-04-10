@@ -40,9 +40,21 @@ namespace Restorant.Models
             return await _dbset.ToListAsync();
         }
 
-        public async Task<T> GetAsyncById(int id, QueryOption<T> options)
+        public async Task<T> GetByIdAsync(int id, QueryOption<T> options)
         {
-            return await _dbset.FindAsync(id);
+            IQueryable<T> query = _dbset;
+
+            foreach (var include in options.GetIncludes()) 
+            { 
+                query = query.Include(include);
+            }
+            if (options.HasWhere)
+            {
+                query = query.Where(options.Where);
+            }
+            var key = _context.Model.FindEntityType(typeof(T)).FindPrimaryKey().Properties.FirstOrDefault();
+            string primaryKeyName = key? .Name;
+            return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, primaryKeyName) == id);
         }
 
         public async Task<T> UpdateAsync(T entity)
