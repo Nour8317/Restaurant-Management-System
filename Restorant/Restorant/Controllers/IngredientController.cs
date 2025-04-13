@@ -20,5 +20,20 @@ namespace Restorant.Controllers
 
             return View(await ingredients.GetByIdAsync(id, new QueryOption<Ingredient>() { Includes="ProductIngredients.Product"}));
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("IngredientId", "Name")]Ingredient newIngredient)
+        {
+            if (ModelState.IsValid)
+            {
+                await ingredients.CreateAsync(newIngredient);
+                return RedirectToAction("Index");
+            }
+            return View(newIngredient);
+        }
     }
 }
