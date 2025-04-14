@@ -9,7 +9,7 @@ namespace Restorant.Models
         Task<T> GetByIdAsync(int Id, QueryOption<T> Options);
         Task<T> CreateAsync(T entity);
         Task<T> UpdateAsync(T entity);
-        Task<T> DeleteAsync(T entity);
+        Task<T> DeleteAsync(int id);
 
 
     }

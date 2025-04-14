@@ -26,10 +26,9 @@ namespace Restorant.Models
             return entity;
         }
 
-        public async Task<T> DeleteAsync(T entity)
+        public async Task<T> DeleteAsync(int id)
         {
-            if (entity == null) throw new ArgumentNullException(nameof(entity));
-
+            T entity = await _dbset.FindAsync(id);
             _dbset.Remove(entity);
             await _context.SaveChangesAsync();
             return entity;
