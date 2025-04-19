@@ -56,13 +56,13 @@ namespace Restorant.Models
             return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, primaryKeyName) == id);
         }
 
-        public async Task<T> UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            if (entity == null) throw new ArgumentNullException(nameof(entity));
+            
 
             _dbset.Update(entity);
             await _context.SaveChangesAsync();
-            return entity;
+            //return entity;
         }
     }
 }

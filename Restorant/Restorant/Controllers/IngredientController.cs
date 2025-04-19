@@ -51,5 +51,22 @@ namespace Restorant.Controllers
             await ingredients.DeleteAsync(ingredient.IngredientId);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> Edit(int Id)
+        {
+            return View(await ingredients.GetByIdAsync(Id, new QueryOption<Ingredient>() { Includes = "ProductIngredients.Product" }));
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Ingredient ingredient)
+        {
+            if (ModelState.IsValid)
+            {
+                await ingredients.UpdateAsync(ingredient);
+                return RedirectToAction("Index");
+                
+            }
+            return View(ingredient);
+        }
     }
 }

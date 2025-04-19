@@ -8,7 +8,7 @@ namespace Restorant.Models
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(int Id, QueryOption<T> Options);
         Task<T> CreateAsync(T entity);
-        Task<T> UpdateAsync(T entity);
+        Task UpdateAsync(T entity);
         Task<T> DeleteAsync(int id);
 
 
