@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\images\\img1.png",
+      "PackagePath": "staticwebassets\\images\\img1.png"
+    },
+    {
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\images\\img2.png",
+      "PackagePath": "staticwebassets\\images\\img2.png"
+    },
+    {
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\images\\img3.png",
+      "PackagePath": "staticwebassets\\images\\img3.png"
+    },
+    {
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\images\\img4.png",
+      "PackagePath": "staticwebassets\\images\\img4.png"
+    },
+    {
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\images\\img5.png",
+      "PackagePath": "staticwebassets\\images\\img5.png"
+    },
+    {
       "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

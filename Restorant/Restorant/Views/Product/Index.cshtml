@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Product>
+
+<h1>Products</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (Product p in Model)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+                <div class="card mb-4 flex-fill">
+                    <img src="@Url.Content("~/images/" + p.ImageUrl)" class="card-img-top" alt="No Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@p.Name</h5>
+                        <p class="card-text">@p.Description</p>
+                        <p class="card-text">Price = @p.Price$</p>
+                        <p class="card-text">Category : @p.Category</p>
+                        <p class="card-text">Quantity = @p.Stock</p>
+                        <form action="delete" method="post">
+                            <input type="hidden" name="name" value="@p.ProductId" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
