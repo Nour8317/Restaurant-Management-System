@@ -55,6 +55,11 @@ namespace Restorant.Models
             string primaryKeyName = key? .Name;
             return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, primaryKeyName) == id);
         }
+        public async Task<T?> GetByIdAsync(int id)
+        {
+            return await _dbset.FindAsync(id);
+        }
+
 
         public async Task UpdateAsync(T entity)
         {

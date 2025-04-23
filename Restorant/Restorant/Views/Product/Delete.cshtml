@@ -1,0 +1,27 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = $"Delete {Model.Name} Product";
+}
+
+<div class="container mt-5">
+    <div class="card border-danger shadow-sm">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0">Delete Menu Item</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-danger">Are you sure you want to delete <strong>@Model.Name</strong>?</h5>
+            <p class="card-text">This action cannot be undone.</p>
+
+            <form asp-action="DeleteConfirmed" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="ProductId" />
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

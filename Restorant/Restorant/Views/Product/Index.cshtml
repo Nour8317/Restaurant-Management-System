@@ -15,13 +15,19 @@
                         <p class="card-text">Price = @p.Price$</p>
                         <p class="card-text">Category : @p.Category</p>
                         <p class="card-text">Quantity = @p.Stock</p>
-                        <form action="delete" method="post">
+                        <form asp-action="Delete" asp-route-id="@p.ProductId" method="get">
                             <input type="hidden" name="name" value="@p.ProductId" />
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
+                        <form asp-action="Edit" asp-route-id="@p.ProductId" method="get">
+                            <input type="hidden" name="name" value="@p.ProductId" />
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
         }
+        <a asp-action="Create">Create New Item</a>
     </div>
 </div>
