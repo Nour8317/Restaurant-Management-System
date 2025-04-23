@@ -1,4 +1,6 @@
-﻿@model Product
+﻿@using Restorant.ViewModels
+@model ProductFormViewModel
+
 
 @{
     ViewBag.Title = "Create Product";
@@ -11,34 +13,45 @@
         <div class="card shadow p-4">
             <form asp-action="Create" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label asp-for="Name" class="form-label"></label>
-                    <input asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <label asp-for="Product.Name" class="form-label"></label>
+                    <input asp-for="Product.Name" class="form-control" />
+                    <span asp-validation-for="Product.Name" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Description" class="form-label"></label>
-                    <input asp-for="Description" class="form-control" type="textarea" />
-                    <span asp-validation-for="Description" class="text-danger"></span>
+                    <label asp-for="Product.Description" class="form-label"></label>
+                    <input asp-for="Product.Description" class="form-control" type="textarea" />
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Price" class="form-label"></label>
-                    <input asp-for="Price" class="form-control" />
-                    <span asp-validation-for="Price" class="text-danger"></span>
+                    <label asp-for="Product.Price" class="form-label"></label>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="ImageFile" class="form-label"></label>
-                    <input asp-for="ImageFile" class="form-control" type="file" />
-                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    <label asp-for="Product.ImageFile" class="form-label"></label>
+                    <input asp-for="Product.ImageFile" class="form-control" type="file" />
+                    <span asp-validation-for="Product.ImageFile" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label asp-for="CategoryId" class="form-label"></label>
-                    <select asp-for="CategoryId" asp-items="ViewBag.categories" class="form-select"></select>
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    <label asp-for="Product.CategoryId" class="form-label">Category</label>
+                    <select asp-for="Product.CategoryId" asp-items="Model.Categories" class="form-select"></select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
                 </div>
 
+                <h5>Ingredients</h5>
+                <div class="mb-3">
+                    @for (int i = 0; i < Model.Ingredients.Count; i++)
+                    {
+                        <div class="form-check">
+                            <input type="checkbox" asp-for="Ingredients[i].IsSelected" class="form-check-input" />
+                            <input type="hidden" asp-for="Ingredients[i].IngredientId" />
+                            <label class="form-check-label">@Model.Ingredients[i].Name</label>
+                        </div>
+                    }
+                </div>
 
                 <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-primary">Create</button>

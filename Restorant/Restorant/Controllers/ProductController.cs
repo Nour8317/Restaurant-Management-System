@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Restorant.Data;
 using Restorant.Models;
+using Restorant.ViewModels;
 
 namespace Restorant.Controllers
 {
@@ -9,9 +10,11 @@ namespace Restorant.Controllers
     {
         Repository<Product> products;
         Repository<Category> categories;
+        Repository<Ingredient> ingredients;
         public ProductController(ApplicationDbContext context) {
             this.products = new Repository<Product>(context);        
-            this.categories = new Repository<Category>(context);        
+            this.categories = new Repository<Category>(context);
+            this.ingredients = new Repository<Ingredient>(context);
         }
         public async Task<IActionResult> Index()
         { 
@@ -20,14 +23,32 @@ namespace Restorant.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            ViewBag.categories = new SelectList(await categories.GetAllAsync(), "CategoryId", "Name");
-            return View();
+            var allIngredients = await ingredients.GetAllAsync();
+            var viewModel = new ProductFormViewModel
+            {
+                Product = new Product(),
+                Categories = (await categories.GetAllAsync())
+                    .Select(c => new SelectListItem { Value = c.CategoryId.ToString(), Text = c.Name })
+                    .ToList(),
+                Ingredients = allIngredients.Select(i => new IngredientCheckbox
+                {
+                    IngredientId = i.IngredientId,
+                    Name = i.Name,
+                    IsSelected = false
+                }).ToList()
+            };
+
+            return View(viewModel);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Product product)
+        public async Task<IActionResult> Create(ProductFormViewModel viewModel)
         {
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid)
+            {
+                var product = viewModel.Product;
+
                 if (product.ImageFile != null && product.ImageFile.Length > 0)
                 {
                     var wwwRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
@@ -40,17 +61,36 @@ namespace Restorant.Controllers
                     }
                     product.ImageUrl = fileName;
                 }
+
+                product.ProductIngredients = viewModel.Ingredients
+                    .Where(i => i.IsSelected)
+                    .Select(i => new ProductIngredient
+                    {
+                        IngredientId = i.IngredientId
+                    }).ToList();
+
                 await products.CreateAsync(product);
                 return RedirectToAction("Index");
+            }
+            viewModel.Categories = (await categories.GetAllAsync())
+                .Select(c => new SelectListItem { Value = c.CategoryId.ToString(), Text = c.Name })
+                .ToList();
+            viewModel.Ingredients = (await ingredients.GetAllAsync())
+                .Select(i => new IngredientCheckbox
+                {
+                    IngredientId = i.IngredientId,
+                    Name = i.Name,
+                    IsSelected = viewModel.Ingredients.Any(sel => sel.IngredientId == i.IngredientId && sel.IsSelected)
+                }).ToList();
+
+            return View(viewModel);
         }
-            ViewBag.categories = new SelectList(await categories.GetAllAsync(), "CategoryId", "Name");
-            return View();
-        }
+
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await products.GetByIdAsync(id);
+            var product = await products.GetByIdAsync(id, new QueryOption<Product>{ Includes= "ProductIngredients.Ingredient" });
             if (product == null)
                 return NotFound();
 
@@ -61,7 +101,7 @@ namespace Restorant.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed([Bind("ProductId")] Product product)
         {
-            var p = await products.GetByIdAsync(product.ProductId);
+            var p = await products.GetByIdAsync(product.ProductId, new QueryOption<Product> { Includes = "ProductIngredients.Ingredient" });
             if (p == null)
                 return NotFound();
 
@@ -81,7 +121,7 @@ namespace Restorant.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             ViewBag.categories = new SelectList(await categories.GetAllAsync(), "CategoryId", "Name");
-            return View(await products.GetByIdAsync(id));
+            return View(await products.GetByIdAsync(id, new QueryOption<Product> { Includes = "ProductIngredients.Ingredient" }));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
