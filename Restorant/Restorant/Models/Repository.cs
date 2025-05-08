@@ -69,5 +69,25 @@ namespace Restorant.Models
             await _context.SaveChangesAsync();
             //return entity;
         }
+
+        public async Task<IEnumerable<T>> GetAllByIdAsync<Tkey>(Tkey id, string propertyName, QueryOption<T> options)
+        {
+            IQueryable<T> query = _dbset;
+            if (options.HasWhere)
+            {
+                query = query.Where(options.Where);
+            }
+            if (options.HasOrderBy)
+            {
+                query = query.OrderBy(options.OrderBy);
+            }
+            foreach(string include in options.GetIncludes())
+            {
+                query = query.Include(include);
+            }
+            query = query.Where(e => EF.Property<Tkey>(e, propertyName).Equals(id));
+            return await query.ToListAsync();
+        }
+            
     }
 }

@@ -4557,9 +4557,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restorant.csproj",
-      "projectName": "Restorant",
-      "projectPath": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restorant.csproj",
+      "projectUniqueName": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restaurant.csproj",
+      "projectName": "Restaurant",
+      "projectPath": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\Restaurant.csproj",
       "packagesPath": "C:\\Users\\Noureldeen\\.nuget\\packages\\",
       "outputPath": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\obj\\",
       "projectStyle": "PackageReference",

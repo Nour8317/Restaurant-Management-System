@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Restorant.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Restorant.bundle.scp.css"
+      "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Restaurant.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Restaurant.bundle.scp.css"
     },
     {
       "Id": "E:\\projects\\Restaurant-Management-System\\Restorant\\Restorant\\wwwroot\\css\\site.css",
@@ -265,20 +265,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Restorant.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Restaurant.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Restorant.props",
-      "PackagePath": "build\\Restorant.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Restaurant.props",
+      "PackagePath": "build\\Restaurant.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Restorant.props",
-      "PackagePath": "buildMultiTargeting\\Restorant.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Restaurant.props",
+      "PackagePath": "buildMultiTargeting\\Restaurant.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Restorant.props",
-      "PackagePath": "buildTransitive\\Restorant.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Restaurant.props",
+      "PackagePath": "buildTransitive\\Restaurant.props"
     }
   ],
   "ElementsToRemove": []

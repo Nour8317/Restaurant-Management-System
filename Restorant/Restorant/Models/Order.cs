@@ -5,6 +5,10 @@ namespace Restorant.Models
 {
     public class Order
     {
+        public Order() 
+        { 
+            OrderItems = new List<OrderItem>();
+        }
         [Key]
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
